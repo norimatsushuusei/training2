@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TopViewController" customModule="training2" customModuleProvider="target">
+            <connections>
+                <outlet property="headerView" destination="bCE-7L-iDl" id="5yO-vn-iHI"/>
+                <outlet property="mainView" destination="s4i-d2-ZD2" id="Ps9-AD-h0Y"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bCE-7L-iDl" customClass="HeaderView" customModule="PGFramework">
+                    <rect key="frame" x="0.0" y="44" width="414" height="48"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="fH6-Z2-owg"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s4i-d2-ZD2" customClass="TopMainView" customModule="training2" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="92" width="414" height="804"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="bCE-7L-iDl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="34v-KB-rIQ"/>
+                <constraint firstItem="s4i-d2-ZD2" firstAttribute="top" secondItem="bCE-7L-iDl" secondAttribute="bottom" id="4B2-gg-5Wc"/>
+                <constraint firstAttribute="bottom" secondItem="s4i-d2-ZD2" secondAttribute="bottom" id="BLb-BC-0wN"/>
+                <constraint firstItem="s4i-d2-ZD2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="P0F-hR-PUS"/>
+                <constraint firstItem="bCE-7L-iDl" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="jSj-GX-W61"/>
+                <constraint firstItem="s4i-d2-ZD2" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="tUu-Jx-FdH"/>
+                <constraint firstItem="bCE-7L-iDl" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="yNP-Nf-2BM"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="106.47321428571428"/>
+        </view>
+    </objects>
+</document>
